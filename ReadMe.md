@@ -46,3 +46,10 @@ burgerandtacos.eatsout.com/burgers
 
 burgerandtacos.eatsout.com/tacos
 ![Tacos](./img/Tacos.png)
+
+Pour gerer 3 fois plus de commande sur le magasin des Tacos j'ai modifier la valeur de l'attribut "replicas" passant de 1 à 3 dans le fichier [Tacos/conf.yaml](./Tacos/conf.yaml)
+
+Comment verifier que la charge soit bien répartie ?
+Avec la commande `kubectl logs -f <nom-du-pod>`, l'option "-f" permet d'avoir le flux des logs en continu.
+J'ai ouvert 3 onglets dans mon terminal et j'execute cette commande pour chaque pod qui correspond à Tacos.
+![LLogs](./img/logs.png)

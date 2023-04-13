@@ -18,7 +18,7 @@ kind: Deployment
 metadata:
   name: nginx-tacos-deployment
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: nginx-tacos
