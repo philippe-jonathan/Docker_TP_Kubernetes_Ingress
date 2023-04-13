@@ -23,8 +23,17 @@ cd Burger/
 docker build -t burger -f Dockerfile .
 docker tag burger philippe1jonathan/restaurants:burger
 docker push philippe1jonathan/restaurants:burger 
+kubectl apply -f conf.yaml
+```
+Pour dépoyer l'ingress
+```zsh
+kubectl apply -f ingress_restaurants.yaml
 ```
 
 Voir le fichier [ingress.yaml](./ingress.yaml) et les fichiers "conf.yaml" dans chaque dossier :
 Burger : [conf.yaml](./Burger/conf.yaml) / Pizza : [conf.yaml](./Pizza/conf.yaml) / Tacos : [conf.yaml](./Tacos/conf.yaml)
 
+Ajouter cette ligne dans le fichier "/etc/hosts"
+```zsh
+127.0.0.1 pizza.eatsout.com burgerandtacos.eatsout.com
+```
