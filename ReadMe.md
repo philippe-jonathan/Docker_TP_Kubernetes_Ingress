@@ -37,3 +37,12 @@ Ajouter cette ligne dans le fichier "/etc/hosts"
 ```zsh
 127.0.0.1 pizza.eatsout.com burgerandtacos.eatsout.com
 ```
+
+pizza.eatsout.com
+![Pizza](./img/Pizza.png)
+
+burgerandtacos.eatsout.com/burgers
+![Burger](./img/Burger.png)
+
+burgerandtacos.eatsout.com/tacos
+![Tacos](./img/Tacos.png)
