@@ -74,3 +74,14 @@ For get password :
 ```zsh
 argocd admin initial-password -n argocd
 ```
+
+## Create app
+Go to settings -> repository and connect your repository.
+
+Click on "Create app" and adjust informations.
+
+```
+App name : eatsout
+Url git : "`url of repository`.git"
+Path : "./"
+```
