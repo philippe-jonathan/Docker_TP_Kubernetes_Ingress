@@ -33,4 +33,3 @@ spec:
               name: nginx-tacos-service
               port:
                 number: 80
-   

@@ -53,3 +53,24 @@ Comment verifier que la charge soit bien répartie ?
 Avec la commande `kubectl logs -f <nom-du-pod>`, l'option "-f" permet d'avoir le flux des logs en continu.
 J'ai ouvert 3 onglets dans mon terminal et j'execute cette commande pour chaque pod qui correspond à Tacos.
 ![LLogs](./img/logs.png)
+
+# ArgoCD
+## Install on cluster : 
+```zsh
+kubectl create namespace argocd
+```
+```zsh
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml
+```
+## Access The Argo CD API Server :
+```zsh
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+```
+## Login :
+```
+Username : admin
+```
+For get password : 
+```zsh
+argocd admin initial-password -n argocd
+```
